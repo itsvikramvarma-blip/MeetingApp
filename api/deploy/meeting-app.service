@@ -1,0 +1,15 @@
+[Unit]
+Description=Meeting App API
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/meeting-app-api
+Environment=NODE_ENV=production
+Environment=PORT=3000
+ExecStart=/usr/bin/node /var/www/meeting-app-api/src/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

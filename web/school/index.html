@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stellar Academy — Education with Purpose</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Stellar Academy — a modern, caring school focused on academic excellence and student growth." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Stellar Academy</div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero parallax" data-speed="0.5" aria-label="School hero">
+      <div class="overlay"></div>
+      <div class="hero-content container">
+        <h1>Inspiring learners. Building futures.</h1>
+        <p class="lead">A modern curriculum, strong values, and a supportive community.</p>
+        <p><a class="btn" href="#admissions">Apply now</a></p>
+      </div>
+    </section>
+
+    <!-- Live updates (real-time data) -->
+    <section id="live" class="section live">
+      <div class="container">
+        <div class="live-row">
+          <div class="live-announcement">
+            <strong>Announcement:</strong>
+            <span id="live-announcement">No new updates.</span>
+          </div>
+          <div class="live-stats">
+            <strong>Visitors now:</strong>
+            <span id="live-visitors">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Stellar Academy</h2>
+        <p>Stellar Academy is committed to excellence in academics and character development. Our campus provides an engaging, safe environment where students thrive.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Our Mission</h3>
+            <p>To prepare students for meaningful lives through rigorous learning and compassionate leadership.</p>
+          </article>
+          <article class="card">
+            <h3>Community</h3>
+            <p>Partnership with families and local organizations creates rich learning opportunities.</p>
+          </article>
+          <article class="card">
+            <h3>Facilities</h3>
+            <p>Modern classrooms, science labs, sports fields and dedicated arts spaces.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax feature" data-speed="0.3" aria-hidden="true">
+      <div class="overlay"></div>
+      <div class="container feature-inner">
+        <h2>Academic Excellence</h2>
+        <p>Our teachers deliver research-based instruction with personalized support for every learner.</p>
+      </div>
+    </section>
+
+    <section id="academics" class="section">
+      <div class="container">
+        <h2>Programs & Curriculum</h2>
+        <p>From kindergarten through upper grades we offer a balanced program emphasizing critical thinking and creativity.</p>
+        <ul class="program-list">
+          <li>STEM and Computer Science</li>
+          <li>Arts and Music</li>
+          <li>Languages and Global Studies</li>
+          <li>Wellness and Sports</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta parallax" data-speed="0.45">
+      <div class="overlay"></div>
+      <div class="container cta-inner">
+        <h2>Visit the Campus</h2>
+        <p>Schedule a tour and see Stellar Academy in action.</p>
+        <p><a class="btn" href="#contact">Contact Admissions</a></p>
+      </div>
+    </section>
+
+    <section id="admissions" class="section">
+      <div class="container">
+        <h2>Admissions</h2>
+        <p>We welcome students of all backgrounds. Learn about our application process, tuition, and financial aid.</p>
+        <div class="admissions-grid">
+          <div>
+            <h3>How to Apply</h3>
+            <p>Complete the online form, submit records, and schedule an interview.</p>
+          </div>
+          <div>
+            <h3>Tuition</h3>
+            <p>Transparent tuition with scholarships and financial assistance available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Reach out to our admissions team or request a brochure.</p>
+        <form class="contact-form" action="#" method="post" onsubmit="return false;">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="form-row">
+            <button class="btn" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Stellar Academy — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

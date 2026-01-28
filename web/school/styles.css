@@ -1,0 +1,73 @@
+:root{
+  --bg:#f6f7fb;
+  --accent:#0b57d0;
+  --muted:#6b7280;
+  --container:1200px;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:var(--bg);color:#222;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+
+/* Header */
+.site-header{background:#fff;position:sticky;top:0;z-index:40;box-shadow:0 2px 8px rgba(15,23,42,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.brand{font-weight:700;color:var(--accent);font-size:1.1rem}
+.site-nav a{margin-left:1.25rem;color:#263238;text-decoration:none}
+.menu-toggle{display:none;background:transparent;border:0;font-size:1.25rem}
+
+/* Sections */
+.section{padding:4rem 0;background:transparent}
+.section h2{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.25rem}
+.card{background:#fff;padding:1.25rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,18,37,0.06)}
+
+.admissions-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.program-list{columns:2;gap:1rem}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:0.6rem 1rem;border-radius:8px;text-decoration:none}
+
+/* Parallax sections */
+.parallax{position:relative;min-height:56vh;background-size:cover;background-position:center center;background-repeat:no-repeat;display:flex;align-items:center}
+.parallax .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(6,16,42,0.25), rgba(6,16,42,0.35));}
+.hero{background-image:linear-gradient(180deg, rgba(9,30,66,0.35), rgba(9,30,66,0.35)), url('assets/images/hero.svg'); color:#fff}
+.feature{background-image:linear-gradient(180deg, rgba(2,6,23,0.45), rgba(2,6,23,0.3)), url('assets/images/feature.svg'); color:#fff}
+.cta{background-image:linear-gradient(180deg, rgba(3,18,45,0.45), rgba(3,18,45,0.45)), url('assets/images/cta.svg'); color:#fff}
+.hero-content{position:relative;z-index:2;padding:4rem 0}
+.hero-content h1{font-size:2.4rem;margin:0 0 0.5rem}
+.hero-content .lead{opacity:0.95}
+
+.feature-inner,.cta-inner{position:relative;z-index:2;padding:4rem 0;text-align:center}
+
+/* Contact form */
+.contact-form{max-width:640px}
+.form-row{margin-bottom:1rem}
+.form-row label{display:block;margin-bottom:0.5rem;font-weight:600}
+.form-row input,.form-row textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid #e6e9ef}
+
+/* Live updates */
+.live-row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.live-announcement{flex:1;background:#fff;padding:0.75rem 1rem;border-radius:8px;box-shadow:0 6px 18px rgba(12,18,37,0.04)}
+.live-stats{min-width:160px;text-align:right;padding:0.75rem 1rem;background:linear-gradient(90deg,#eef6ff,#f8fbff);border-radius:8px}
+
+
+/* Footer */
+.site-footer{background:#0b1220;color:#dbeafe;padding:1.25rem 0}
+
+/* Utilities */
+.lead{font-size:1.05rem;color:#f1f5f9}
+
+/* Responsive */
+@media (max-width:900px){
+  .admissions-grid{grid-template-columns:1fr}
+  .program-list{columns:1}
+  .site-nav{display:none}
+  .menu-toggle{display:block}
+  .live-row{flex-direction:column;align-items:stretch}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto}
+}

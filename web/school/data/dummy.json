@@ -1,0 +1,22 @@
+{
+  "announcements": [
+    "Open day next Saturday — register now!",
+    "New STEM after-school clubs launching this term.",
+    "School choir performing on Friday at 6pm.",
+    "Parent-teacher conferences scheduled for next month."
+  ],
+  "visitors": 42,
+  "programs": [
+    "STEM and Computer Science",
+    "Arts and Music",
+    "Languages and Global Studies",
+    "Wellness and Sports"
+  ],
+  "gallery": [
+    { "title": "Science Lab", "image": "assets/images/gallery1.svg" },
+    { "title": "Performing Arts", "image": "assets/images/gallery2.svg" }
+  ],
+  "heroImage": "assets/images/hero.svg",
+  "featureImage": "assets/images/feature.svg",
+  "ctaImage": "assets/images/cta.svg"
+}
